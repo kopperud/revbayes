@@ -47,8 +47,6 @@ jobs:
       env:
         - CXX_COMPILER=/usr/bin/g++-9
         - C_COMPILER=/usr/bin/gcc-9
-        - Boost_USE_STATIC_LIBS=ON
-        - Boost_USE_STATIC_RUNTIME=ON
         - USE_MPI="false"
       addons:
         apt:

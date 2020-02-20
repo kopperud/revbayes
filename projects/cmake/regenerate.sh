@@ -166,6 +166,9 @@ if [ "$travis" = "true" ]
 then
     echo 'set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g0 -O2")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g0 -O2")
+SET(Boost_NO_SYSTEM_PATHS ON)
+SET(Boost_USE_STATIC_RUNTIME ON)
+SET(Boost_USE_STATIC_LIBS ON)
 ' >> "$BUILD_DIR/CMakeLists.txt"
 fi
 
