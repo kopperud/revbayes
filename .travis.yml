@@ -42,7 +42,7 @@ jobs:
           - pandoc
           - boost1.67
     - os: linux
-      dist: xenial
+      dist: bionic
       cache: ccache
       env:
         - CXX_COMPILER=/usr/bin/g++-9
