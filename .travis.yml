@@ -10,7 +10,7 @@ stages:
 jobs:
   include:
     - os: linux
-      dist: bionic
+      dist: xenial
       cache: ccache
       env:
         - CXX_COMPILER=/usr/bin/g++-7
@@ -26,7 +26,7 @@ jobs:
           - pandoc
           - boost1.67
     - os: linux
-      dist: bionic
+      dist: xenial
       cache: ccache
       env:
         - CXX_COMPILER=/usr/bin/g++-8
@@ -42,7 +42,7 @@ jobs:
           - pandoc
           - boost1.67
     - os: linux
-      dist: bionic
+      dist: xenial
       cache: ccache
       env:
         - CXX_COMPILER=/usr/bin/g++-9
@@ -68,7 +68,7 @@ jobs:
           branch: travisreleases
         draft: true
     - os: linux
-      dist: bionic
+      dist: xenial
       cache: ccache
       env:
         - CXX_COMPILER=/usr/bin/g++-7
@@ -86,7 +86,7 @@ jobs:
           - boost1.67
           - libopenmpi-dev
     - os: linux
-      dist: bionic
+      dist: xenial
       compiler: clang++
       cache: ccache
       env:
