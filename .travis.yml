@@ -53,7 +53,7 @@ jobs:
       addons:
         apt:
           sources:
-          - ubuntu-toolchain-r-test
+          - sourceline: 'ppa:ubuntu-toolchain-r/test'
           packages:
           - g++-9
           - pandoc
